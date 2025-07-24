@@ -12,7 +12,7 @@ const { v4: uuidv4 } = require('uuid');
 
 // Initialize Express app
 const app = express();
-const port = process.env.PORT || 3409;
+const port = process.env.PORT || 3075;
 
 // Create uploads directory if it doesn't exist
 const uploadsDir = path.join(__dirname, 'Uploads');
@@ -37,13 +37,13 @@ app.use(morgan('dev'));
 
 // CORS configuration
 const allowedOrigins = [
-  'http://44.223.23.145:8031',
-  'http://44.223.23.145:8032',
-  'http://44.223.23.145:8033',
-  'http://44.223.23.145:3408',
-  'http://localhost:8031',
-  'http://localhost:8032',
-  'http://localhost:8033',
+  'http://15.207.109.92:8205',
+  'http://15.207.109.92:8206',
+  'http://15.207.109.92:8207',
+  'http://15.207.109.92:3075',
+  'http://localhost:8205',
+  'http://localhost:8206',
+  'http://localhost:8207',
   'http://127.0.0.1:5500',
   'http://127.0.0.1:5502',
   'null', // Added temporarily for file:// testing
@@ -549,5 +549,5 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server running at http://44.223.23.145:${port}`);
+  console.log(`Server running at http://15.207.109.92:${port}`);
 });
