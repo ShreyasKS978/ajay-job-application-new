@@ -37,10 +37,10 @@ app.use(morgan('dev'));
 
 // CORS configuration
 const allowedOrigins = [
-  'http://15.207.109.92:8205',
-  'http://15.207.109.92:8206',
-  'http://15.207.109.92:8207',
-  'http://15.207.109.92:3075',
+  'http://52.66.246.92:8205',
+  'http://52.66.246.92:8206',
+  'http://52.66.246.92:8207',
+  'http://52.66.246.92:3075',
   'http://localhost:8205',
   'http://localhost:8206',
   'http://localhost:8207',
@@ -549,5 +549,5 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server running at http://15.207.109.92:${port}`);
+  console.log(`Server running at http://52.66.246.92:${port}`);
 });
